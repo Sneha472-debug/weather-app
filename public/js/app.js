@@ -1,4 +1,4 @@
-console.log('Here I load new Files.. Hurey')
+
 
 // fetch('http://puzzle.mead.io/puzzle').then((response)=>{
 //     response.json().then((data)=>{
