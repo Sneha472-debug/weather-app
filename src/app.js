@@ -6,6 +6,7 @@ const foreCast = require('./utils/forecast.js')
 const forecast = require('../../weather-app/utils/forecast.js')
 
 const app = express()
+const port=process.env.PORT || 3000   //setting the heroku port
 //app.disable('x-powered-by') / depricate error removal
 const publicDirectory = path.join(__dirname ,'../public')
 const viewDirectory = path.join(__dirname,'../templates/views')
@@ -101,6 +102,10 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+// app.listen(3000, () => {
+//     console.log('Server is up on port 3000.')
+// })
+
+app.listen(port,()=>{
+    console.log('Server is running on ' + port)
 })

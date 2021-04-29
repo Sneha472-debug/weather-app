@@ -28,7 +28,7 @@ weathForm.addEventListener('submit',(e)=>{
     const location = searchInput.value
     msgOne.textContent ='Loading ...'
     msgTwo.textContent = ' '
-    fetch('http://localhost:3000/weather?address='+location).then((response)=>{
+    fetch('/weather?address='+location).then((response)=>{  //http://localhost:3000 add this if we are using local and remove if we are using heroku
     response.json().then((data)=>{
         if(data.error){
             //console.log('Please check the URL')
