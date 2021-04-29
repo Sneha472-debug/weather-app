@@ -1,4 +1,5 @@
 
+//this is static
 
 // fetch('http://puzzle.mead.io/puzzle').then((response)=>{
 //     response.json().then((data)=>{
