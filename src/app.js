@@ -6,7 +6,7 @@ const foreCast = require('./utils/forecast.js')
 const forecast = require('../../weather-app/utils/forecast.js')
 
 const app = express()
-const port=process.env.PORT || 3000   //setting the heroku port
+const port= Process.env.PORT || 3000   //setting the heroku port
 //app.disable('x-powered-by') / depricate error removal
 const publicDirectory = path.join(__dirname ,'../public')
 const viewDirectory = path.join(__dirname,'../templates/views')
